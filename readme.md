@@ -6,7 +6,10 @@
 [![Code Climate](https://codeclimate.com/github/DEFRA/waste-permits-api/badges/gpa.svg)](https://codeclimate.com/github/DEFRA/waste-permits-api)
 [![Test Coverage](https://codeclimate.com/github/DEFRA/waste-permits-api/badges/coverage.svg)](https://codeclimate.com/github/DEFRA/waste-permits-api/coverage)
 [![Dependency Status](https://dependencyci.com/github/DEFRA/waste-permits-api/badge)](https://dependencyci.com/github/DEFRA/waste-permits-api)
-[![Greenkeeper badge](https://badges.greenkeeper.io/DEFRA/waste-permits-api.svg)](https://greenkeeper.io/)
+
+## Development Team
+
+This module was developed by the Waste Permits team as part of a digital transformation project at [DEFRA](https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs), a department of the UK government
 
 ## Prerequisites
 
@@ -98,3 +101,7 @@ their information under a common open licence.
 
 It is designed to encourage use and re-use of information freely
 and flexibly, with only a few conditions.
+
+## Environment Variables
+
+The required environment variables for local development can be found in the [.env.example file](./.env.example).
