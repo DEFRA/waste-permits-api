@@ -6,8 +6,6 @@ const handlers = new Handlers(Application)
 
 module.exports = handlers.routes({
   path: '/applications',
-  params: {
-    id: Joi.string().guid()
-  },
+  params: Application.params,
   schema: Joi.object(Application.schema).label('Application')
 })

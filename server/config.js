@@ -8,10 +8,11 @@ const Joi = require('@hapi/joi')
 const DEVELOPMENT = 'development'
 const TEST = 'test'
 const PRODUCTION = 'production'
+const DEFAULT_PORT = 3010
 
 // Define the config schema
 const schema = {
-  port: Joi.number().default(3000),
+  port: Joi.number().default(DEFAULT_PORT),
   env: Joi.string().valid(DEVELOPMENT, TEST, PRODUCTION).default(DEVELOPMENT)
 }
 
