@@ -1,6 +1,11 @@
 # Waste Permits API Service
 
 [![Build Status](https://travis-ci.org/DEFRA/waste-permits-api.svg?branch=master)](https://travis-ci.org/DEFRA/waste-permits-api)
+[![Known Vulnerabilities](https://snyk.io/test/github/defra/waste-permits-api/badge.svg)](https://snyk.io/test/github/defra/waste-permits-api)
+[![dependencies Status](https://david-dm.org/defra/waste-permits-api/status.svg)](https://david-dm.org/defra/waste-permits-api)
+[![Code Climate](https://codeclimate.com/github/DEFRA/waste-permits-api/badges/gpa.svg)](https://codeclimate.com/github/DEFRA/waste-permits-api)
+[![Test Coverage](https://codeclimate.com/github/DEFRA/waste-permits-api/badges/coverage.svg)](https://codeclimate.com/github/DEFRA/waste-permits-api/coverage)
+[![Dependency Status](https://dependencyci.com/github/DEFRA/waste-permits-api/badge)](https://dependencyci.com/github/DEFRA/waste-permits-api)
 [![Greenkeeper badge](https://badges.greenkeeper.io/DEFRA/waste-permits-api.svg)](https://greenkeeper.io/)
 
 ## Prerequisites
