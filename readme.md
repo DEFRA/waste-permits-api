@@ -47,7 +47,7 @@ Run the app using  **npm**
 npm start
 ```
 
-## Testing the app
+## Unit testing the app
 
 Use the following **npm** task. This runs the **StandardJS**
 linting as well as the unit tests to produce a `coverage.html`
@@ -55,6 +55,14 @@ report
 
 ```bash
 npm test
+```
+
+## Testing the API
+
+When the app is running, use the following **npm** task. This sends a sequence of requests to the REST API of the app and makes sure the results are as expected.
+
+```bash
+npm run api-test
 ```
 
 ## Contributing to this project

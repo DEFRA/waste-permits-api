@@ -1,9 +1,14 @@
 .DS_Store
-.vscode
-.idea
 .env
+
 node_modules
-npm-debug.log
-/coverage.html
 /api-test.json
 log
+
+# Test coverage output files
+coverage.html
+lcov.info
+
+# IDE
+.idea
+.vscode
