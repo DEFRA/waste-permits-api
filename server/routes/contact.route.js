@@ -6,8 +6,6 @@ const handlers = new Handlers(Contact)
 
 module.exports = handlers.routes({
   path: '/contacts',
-  params: {
-    id: Joi.string().guid()
-  },
+  params: Contact.params,
   schema: Joi.object(Contact.schema).label('Contact')
 })

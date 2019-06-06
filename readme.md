@@ -73,6 +73,10 @@ When the app is running, use the following **npm** task. This sends a sequence o
 npm run api-test
 ```
 
+## API Documentation using Swagger
+
+[Swagger](https://github.com/glennjones/hapi-swagger) can be accessed in the path "/documentation"
+
 ## Contributing to this project
 
 If you have an idea you'd like to contribute please log an issue.
