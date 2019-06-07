@@ -6,8 +6,8 @@ module.exports = class Handlers {
     this.Model = Model
   }
 
-  async handleGet () {
-    return this.Model.getAll()
+  async handleGet (request) {
+    return this.Model.getAll(request.query)
   }
 
   async handleGetById (request) {
@@ -64,7 +64,11 @@ module.exports = class Handlers {
         path,
         handler: handleGet,
         options: {
-          tags: ['api']
+          tags: ['api'],
+          validate: {
+            query: schema,
+            failAction: handleError
+          }
         }
       }, {
         method: 'GET',

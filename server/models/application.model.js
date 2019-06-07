@@ -1,5 +1,5 @@
 const Joi = require('@hapi/joi')
-const BaseModel = require('./base.model')
+const BaseModel = require('./baseModel')
 
 module.exports = class Application extends BaseModel {
   static get params () {
