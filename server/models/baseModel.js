@@ -1,11 +1,10 @@
 const Joi = require('@hapi/joi')
-const uuid = require('uuid/v1')
-
-const model = {}
+const { dataStore } = require('../config')
+const Dal = require(`./${dataStore}-dal`)
 
 module.exports = class BaseModel {
   static get schema () {
-    throw new Error(`The schema getter needs to be implemented within the ${this.constructor.name} class`)
+    throw new Error(`The schema getter needs to be implemented within the ${this.name} class`)
   }
 
   constructor (data) {
@@ -17,27 +16,19 @@ module.exports = class BaseModel {
     }
   }
 
-  static async getAll () {
-    return Object.values(model)
+  static async getAll (query) {
+    return Dal[this.name].findAll(query)
   }
 
   static async getById (id) {
-    return model[id]
+    return Dal[this.name].find(id)
   }
 
   async save () {
-    if (!this.id) {
-      this.id = uuid()
-      model[this.id] = this
-    }
-    return this
+    return Dal[this.constructor.name].save(this)
   }
 
   async delete () {
-    if (this.id && model[this.id]) {
-      delete model[this.id]
-      return true
-    }
-    return false
+    return Dal[this.constructor.name].delete(this.id)
   }
 }
