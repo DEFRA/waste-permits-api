@@ -140,16 +140,43 @@
         "@hapi/rule-scope-start": "2.x.x"
       }
     },
+    "@hapi/formula": {
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/@hapi/formula/-/formula-1.2.0.tgz",
+      "integrity": "sha512-UFbtbGPjstz0eWHb+ga/GM3Z9EzqKXFWIbSOFURU0A/Gku0Bky4bCk9/h//K2Xr3IrCfjFNhMm4jyZ5dbCewGA==",
+      "dev": true
+    },
     "@hapi/good": {
-      "version": "8.2.0",
-      "resolved": "https://registry.npmjs.org/@hapi/good/-/good-8.2.0.tgz",
-      "integrity": "sha512-/teb7vubMlWup+Eg/VLdJ6blhWNkU8JUhEbpAP6XTycWbtYwBoXLv3CBFre0jSBZQ7gElKhEzZXYBpr1ET/5JA==",
+      "version": "8.2.2",
+      "resolved": "https://registry.npmjs.org/@hapi/good/-/good-8.2.2.tgz",
+      "integrity": "sha512-Ygj1GDt2ciFwfSP0STR2gZR9VYjq+ypLGDgYHEn7G4ATACNgB6eEdPFHoaddwyO5J67xH7YA6YJkaP7YYsVNWA==",
       "dev": true,
       "requires": {
-        "@hapi/hoek": "6.x.x",
-        "@hapi/joi": "15.x.x",
+        "@hapi/hoek": "8.x.x",
+        "@hapi/joi": "16.x.x",
         "@hapi/oppsy": "2.x.x",
         "pumpify": "1.x.x"
+      },
+      "dependencies": {
+        "@hapi/hoek": {
+          "version": "8.2.4",
+          "resolved": "https://registry.npmjs.org/@hapi/hoek/-/hoek-8.2.4.tgz",
+          "integrity": "sha512-Ze5SDNt325yZvNO7s5C4fXDscjJ6dcqLFXJQ/M7dZRQCewuDj2iDUuBi6jLQt+APbW9RjjVEvLr35FXuOEqjow==",
+          "dev": true
+        },
+        "@hapi/joi": {
+          "version": "16.0.0",
+          "resolved": "https://registry.npmjs.org/@hapi/joi/-/joi-16.0.0.tgz",
+          "integrity": "sha512-OYWoI/uqs40IdRvPmgn5ame35esBnPR4qhzrE03o+Pb8NnlXIBJZWMXgAlwp43781Ybm0R1iEEMDx0H2lP8mJQ==",
+          "dev": true,
+          "requires": {
+            "@hapi/address": "2.x.x",
+            "@hapi/formula": "1.x.x",
+            "@hapi/hoek": "8.x.x",
+            "@hapi/pinpoint": "1.x.x",
+            "@hapi/topo": "3.x.x"
+          }
+        }
       }
     },
     "@hapi/good-console": {
@@ -326,12 +353,20 @@
       }
     },
     "@hapi/oppsy": {
-      "version": "2.1.1",
-      "resolved": "https://registry.npmjs.org/@hapi/oppsy/-/oppsy-2.1.1.tgz",
-      "integrity": "sha512-Pi07rU7p8Zz1TdjhNu8iUlNTp1d22geW2UkA766zkrzbhgycsqPtRfnco2t3aXSqm54dgkZAK3I0fJ42q5dRVA==",
+      "version": "2.1.2",
+      "resolved": "https://registry.npmjs.org/@hapi/oppsy/-/oppsy-2.1.2.tgz",
+      "integrity": "sha512-V/KNuFemyA//sowFFpeMRY4zE6szuy8vh6v2vWDPDhZFowOIwB7kqdFvmnBogk+aHHR+iKgKCU/SuUiv/xZyzg==",
       "dev": true,
       "requires": {
-        "@hapi/hoek": "6.x.x"
+        "@hapi/hoek": "8.x.x"
+      },
+      "dependencies": {
+        "@hapi/hoek": {
+          "version": "8.2.4",
+          "resolved": "https://registry.npmjs.org/@hapi/hoek/-/hoek-8.2.4.tgz",
+          "integrity": "sha512-Ze5SDNt325yZvNO7s5C4fXDscjJ6dcqLFXJQ/M7dZRQCewuDj2iDUuBi6jLQt+APbW9RjjVEvLr35FXuOEqjow==",
+          "dev": true
+        }
       }
     },
     "@hapi/pez": {
@@ -345,6 +380,12 @@
         "@hapi/hoek": "6.x.x",
         "@hapi/nigel": "3.x.x"
       }
+    },
+    "@hapi/pinpoint": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/@hapi/pinpoint/-/pinpoint-1.0.2.tgz",
+      "integrity": "sha512-dtXC/WkZBfC5vxscazuiJ6iq4j9oNx1SHknmIr8hofarpKUZKmlUVYVIhNVzIEgK5Wrc4GMHL5lZtt1uS2flmQ==",
+      "dev": true
     },
     "@hapi/podium": {
       "version": "3.4.0",
